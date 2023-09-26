@@ -1,65 +1,130 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    
-    <title>CatPhotoApp</title>
-  </head>
-  <body>
-    <main>
-      <h1>CatPhotoApp</h1>
-      <section>
-        <h2>Cat Photos</h2>
-        <!-- TODO: Add link to cat photos -->
-        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
-      </section>
-      <section>
-        <h2>Cat Lists</h2>
-        <h3>Things cats love:</h3>
-        <ul>
-          <li>cat nip</li>
-          <li>laser pointers</li>
-          <li>lasagna</li>
-        </ul>
-        <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
-        </figure>
-        <h3>Top 3 things cats hate:</h3>
-        <ol>
-          <li>flea treatment</li>
-          <li>thunder</li>
-          <li>other cats</li>
-        </ol>
-        <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
-        </figure>
-      </section>
-      <section>
-        <h2>Cat Form</h2>
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <fieldset>
-            <legend>Is your cat an indoor or outdoor cat?</legend>
-            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
-            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-          </fieldset>
-          <fieldset>
-            <legend>What's your cat's personality?</legend>
-            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
-            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
-            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
-          </fieldset>
-          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>
-        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
-      </p>
-    </footer>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Form</title>
+</head>
+<body>
+  <h1>HTML Base Register Form</h1>
+ <form>
+  <table border="1">
+    <tr>
+      <td>Name:</td>
+      <td>
+        <input type="text" placeholder="name" class="">
+      </td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+        <td><textarea rows="2" col="2" addres=""></textarea></td>
+    </tr>
+    <tr>
+      <td>Password:</td>
+      <td>
+        <input type="Password" placeholder="Password" class="">
+      </td>
+    </tr>
+    <tr>
+      <td>Job Experience:</td>
+      <td>
+        <input type="text" placeholder=" " class=" "> 
+      </td>
+    </tr>
+    <tr>
+      <td>D.O.F</td>
+      <td>
+        <input type="date" placeholder="date" class=" ">
+      </td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>
+        <input type="email" placeholder="" class=" ">
+      </td>
+    </tr>
+    <tr>
+      <td>Search:</td>
+      <td>
+      <input type="search" placeholder="" class=" ">
+      </td>
+    </tr>
+    <tr>
+      <td>Month:</td>
+      <td>
+      <input type="month" placeholder=" " class=" ">
+      </td>
+    </tr>
+    <tr>
+      <td>Week:</td>
+      <td>
+      <input type="week" placeholder="" class=" ">
+      </td>
+    </tr>
+    <tr>
+      <td>Time:</td>
+      <td>
+      <input type="time" placeholder="" class=" ">
+      </td>
+    </tr>
+    <tr>
+      <td>MOBILE NO:</td>
+      <td>
+      <input type="tel" placeholder="" class=" ">
+      </td>
+    </tr>
+    <tr>
+      <td>URL</td>
+      <td>
+      <input type="url" placeholder="" class=" ">
+      </td>
+    </tr>
+    <tr>
+      <td>Color:</td>
+      <td>
+      <input type="color" placeholder="" class=" ">
+      </td>
+    </tr>
+    <tr>
+      <td>Range:</td>
+      <td>
+      <input type="range" placeholder="" class=" ">
+      </td>
+    </tr>
+    <tr>
+       <td>File:</td>
+      <td>
+      <input type="file" placeholder="" class=" ">
+      </td>
+    </tr>
+    <tr>
+      <td>Qualification:</td>
+      <td>
+      <input id="class1" type="radio" name="class" class=" name">10th
+      <input  id="class2" type="radio"  name="class"class=" name">12th
+      <input id="class3" type="radio" name="class"  class=" name">Graduation
+      </td>
+  </tr>
+  <tr>
+     <td>Category:</td>
+     <td>
+     <input id="Gen" type="radio" name="Category-type" class="Category" /> Gen
+     <input id="OBC" type="radio" name="Category-type" class="Category" /> OBC
+     <input id="SC" type="radio" name="Category-type" class="Category" /> SC
+     <input id="Other" type="radio" name="aCategory-type" class="Category" /> Other
+     </td>
+    </tr> 
+    <tr>
+      <td>File:</td>
+     <td>
+      <input type="file" placeholder="" class=" ">
+      </td>
+      </tr>
+      <tr>
+      <td></td>
+      <td> <input type="submit"></td>
+    </tr>           
+  </table>
+ </form>
+</body>
+</html> 
